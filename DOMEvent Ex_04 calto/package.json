@@ -1,0 +1,8 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "admin-lte": "^2.4.8",
+    "bootstrap": "^5.0.0-beta2"
+  }
+}
