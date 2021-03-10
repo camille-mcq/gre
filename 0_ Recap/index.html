@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Lien Bootstrap-->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <!--Lien CSS-->
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Recap</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 style="background-color: #2579e7; color: #FFF">Javascript DOM</h1>
+        </div>
+        
+        <header class="row" style="width: auto;">
+        <!--NAV BAR Mobile-->    
+        <nav class="navbar navbar-dark navbar-expand-lg navbar-light bg-light nav_up" style="color: #2579e7;">
+            <!--***** Menu déroulant *****-->
+            <div class="collapse navbar-collapse navnav" id="navbarSupportedContent">
+                <ul class="d-flex ici">
+                    <li class="nav-item oho">
+                        <a class="nav-link la" href="#">Exercice 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link la" href="#">Exercice 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link la" href="#">Exercice 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link la" href="#">Exercice 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link la" href="#">Exercice 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link la" href="#">Exercice 6</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link la" href="#">Exercice 7</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        </header> 
+        
+        <!-- Ex 1 Le titre modifié-->
+        <div id="ex1" class="row" style="background-color: #cecaca">
+                <div style="background-color:#2579e7;">
+                    <h1>Le titre à modifier</h1>
+                </div>
+                <div>
+                    <p>List de propritété et méthode à retrouver dans la documentation</p>
+                    <ul>
+                        <li>innerText</li>
+                        <li>innerHTML</li>
+                        <li>querySelector()</li>
+                        <li>querySelectorAll()</li>
+                        <li>style</li>
+                        <li>classList</li>
+                    </ul>
+                    <p>Changer le contenu du h2 par "le titre modifié"</p>
+                    <p>changer la couleur du h2 par (la couleur que vous voulez)</p>
+                    <p>Ajouter une class background bootstrap au h2</p>
+                </div>
+        </div>
+        <!---Section 2--->
+        <div id="ex2" class="row" style="background-color: #cecaca">
+            <p>Mettre un écouteur d'événement sur les boutons nav et changer le panel en conséquence</p>
+        </div>
+        <!--section 3-->
+        <div id="ex3" class="row" style="background-color: #cecaca">
+            <h1>Welcome inconnu</h1>
+            <p>écriver dans l'input ci-dessous le nom de la personne que vous voulez accueillir</p>
+            <p>lorsque vous cliquez sur le bouton "go" le nom que vous avez ajouté dans l'input sera alors mis dans le span du h2 et l'input sera alors vidé de tout contenu. Attention, interdiction de toucher à l'HTML</p>
+            <div class="input-group mb-3 input_ex3">
+                <input id ="" type="text" aria-label="" class="form-control">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">go</button>
+            </div>
+            <div>
+                <ul>
+                    <!--ici vont s'ajouter les li --> 
+                </ul>
+            </div>
+        </div>
+        <!--Section 4-->
+        <div id="ex4" class="row" style="background-color: #cecaca">
+            <h1>Déplacer les éléments</h1>
+            <div class="d-flex justify-content-around">
+                <div style="background-color:#2579e7; height: 150px; width: 30%;" class="position-relative">
+                    <div style="background-color: red; width:30px; height: 30px" class="position-absolute top-50 start-50 translate-middle carre_rouge"></div>
+                </div>
+                <div class="position-relative" style="background-color:#2579e7; height: 150px; width: 30%;">
+                    <div style="background-color: red; width:30px; height: 30px" class="position-absolute top-50 start-50 translate-middle carre_rouge"></div>
+                </div>
+            </div>
+            <br>
+            <div class="d-grid gap-2 col-2 mx-auto d-flex">
+                <button class="btn btn-primary" type="button" style="color: white; background-color:rgb(204, 153, 59)">Changer de  place</button>
+                <button class="btn btn-primary" type="button" style="color: white; background-color: green">Nombre de clicks</button>
+            </div>
+        </div>
+        <!--Section 5-->
+        <div id="ex5" class="row" style="background-color:#cecaca;">
+            <h1>Générer des éléments du DOM</h1>
+            <p>Cliquer sur le bouton ci-dessous pour générer des oeufs</p>
+            <div class="d-grid gap-2 d-md-block">
+                <button type="button" class="btn btn-primary position-relative" type="button" style="color: white; background-color: green" >Ajouter un oeuf</button>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <!--Section 6-->
+        <div id="ex6" class="row" style="background-color:#cecaca;">
+            <h1>Création calculatrice</h1>
+            <h2>Niveau 1</h2>
+            <div class="col-sm-6 d-flex">
+                <input type="text" class="form-control" placeholder="" aria-label="Input1">
+                <span class="input-group-text"> + </span>
+                <input type="text" class="form-control" placeholder="" aria-label="Input 2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon1">=</button>
+                <h3 style="color:black">    ? </h3>
+            </div>
+            <h2>Niveau 2</h2>
+        <!-- Calculatrice -->
+            <div class="col-sm-3" style="background-color: black;">
+                <p style="color:#FFF"> ? </p>
+                <input type="text" class="form-control sm-3" placeholder="" aria-label="" >
+                <br>
+                <button class="m-1 btn" style="background-color: #FFF;">1</button>
+                <button class="m-1 btn" style="background-color: #FFF;">2</button>
+                <button class="m-1 btn" style="background-color: #FFF;">3</button>
+                <button class="m-1 btn fas fa-plus" style="background-color: #2579e7; color: white;"> + </button>
+                <br>
+                <button class="m-1 btn" style="background-color: #FFF;">4</button>  
+                <button class="m-1 btn" style="background-color: #FFF;">5</button>
+                <button class="m-1 btn" style="background-color: #FFF;">6</button>
+                <button class="m-1 btn fas fa-minus" style="background-color: #2579e7; color: white;"> - </button>
+                <br>
+                <button class="m-1 btn" style="background-color: #FFF;">7</button>
+                <button class="m-1 btn" style="background-color: #FFF;">8</button>
+                <button class="m-1 btn" style="background-color: #FFF;">9</button>
+                <button class="m-1 btn" style="background-color: #2579e7; color: white;"> * </button>
+                <br>
+                <button class="m-1 btn" style="background-color:red;">C</button>
+                <button class="m-1 btn" style="background-color: #FFF;"> 0 </button>
+                <button class="m-1 btn" style="background-color: green;"> = </button>
+                <button class="m-1 btn" style="background-color: #2579e7; color: white;"> / </button>
+            </div>
+        </div>
+        <!--section 7-->
+        <div id="ex7" class="row" style="background-color:#cecaca;">
+            <h1>TodoList</h1>
+            <input type="text" class="form-control" placeholder="Que dois-je faire?" aria-label="Que dois-je faire?">
+            <div class="d-flex mx-auto">
+                <button class="btn btn-primary" type="submit" style="background-color: green;">Toute</button>
+                <button class="btn btn-primary" type="submit" style="background-color: green;">Complétées</button>
+                <button class="btn btn-primary" type="submit" style="background-color: green;">A faire</button>
+            </div>
+            <div>
+                <div class="d-flex justify-content-between" style="background-color: blue;">
+                    <p>coucou</p>
+                    <div>
+                        <button class="btn btn-primary" type="submit" style="background-color: green;">Toute</button> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./public/js/main.js"></script>
+</body>
+</html>
